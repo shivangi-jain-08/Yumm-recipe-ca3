@@ -26,7 +26,7 @@ body{
     background: url(./assets/top-sec-bg.png);
     width: 100vw;
     height: 145vh;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
