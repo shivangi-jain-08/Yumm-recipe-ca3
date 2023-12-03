@@ -1,28 +1,31 @@
-*{
+/* Reset styles for all elements */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Font-face declaration for custom font */
 @font-face {
     font-family: expose;
     src: url(./assets/Expose-Medium.otf);
 }
 
-body{
+/* Body styles */
+body {
     font-family: expose;
     overflow-x: hidden;
 }
 
-.flex{
+/* Flex utility class for display flex with space-between and center alignment */
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-
-#top-section{
+/* Top section styles */
+#top-section {
     background: url(./assets/top-sec-bg.png);
     width: 100vw;
     height: 145vh;
@@ -30,28 +33,31 @@ body{
     background-repeat: no-repeat;
 }
 
-nav{
+/* Navigation styles */
+nav {
     display: flex;
     padding: 10px 100px;
     width: 100vw;
 }
 
-#logo{
+#logo {
     scale: 0.6;
 }
 
-#nav-right{
+#nav-right {
     width: 50%;
 }
 
-a{
+/* Anchor tag styles */
+a {
     text-decoration: none;
     color: black;
     font-size: 24px;
     font-weight: 700;
 }
 
-#top-header-section{
+/* Top header section styles */
+#top-header-section {
     margin-top: 100px;
     text-align: center;
     flex-direction: column;
@@ -61,86 +67,63 @@ a{
     justify-content: start;
 }
 
-#top-header-section>div{
+#top-header-section>div {
     width: 25vw;
     overflow-x: hidden;
 }
 
-h1{
+h1 {
     font-size: 72px;
     color: #D75519;
     margin-bottom: 20px;
 }
 
-h3{
+h3 {
     font-size: 32px;
     margin-bottom: 20px;
 }
 
-h4{
+h4 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-h5{
+h5 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-#search-elements{
+#search-elements {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25vw;
 }
 
-#search-input{
+#search-input {
     font-size: 24px;
     font-family: expose;
     padding: 8px;
     border: 6px solid #D75519;
-    border-radius: 40px 0px ;
+    border-radius: 40px 0px;
     width: 25vw;
 }
 
-#search-button{
+#search-button {
     background-color: transparent;
     border: none;
     position: absolute;
     right: 185px;
 }
 
-#search-button-img{
+#search-button-img {
     height: 55px;
 }
 
-/* @keyframes entrance {
-	0% {
-		opacity: 0;
-		transform: translateX(50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-@keyframes exit {
-	0% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
-} */
 /* ---------------------------------------------------------------------- */
 
 /* Middle section starts */
-#middle-section{
+#middle-section {
     background: url(./assets/trending-bg.png);
     width: 100vw;
     height: 140vh;
@@ -149,50 +132,51 @@ h5{
     text-align: center;
 }
 
-#popular-categories{
+/* Popular categories section styles */
+#popular-categories {
     width: 100vw;
     position: absolute;
     top: 114vh;
 }
 
-h2{
+h2 {
     font-size: 56px;
     color: #D75519;
 }
 
-#categories-circles{
+#categories-circles {
     padding: 0px 100px;
 }
 
-#categories-circles>img{
+#categories-circles>img {
     scale: 0.8
 }
 
-#trending-recipe{
+/* Trending recipe section styles */
+#trending-recipe {
     padding-top: 200px;
     position: relative;
 }
 
-#trending-recipe>h2{
+#trending-recipe>h2 {
     color: white;
     margin-bottom: 50px;
-    
 }
 
-#random-meal-image{
+#random-meal-image {
     height: 500px;
     border-radius: 30px;
     filter: drop-shadow(2px 2px 3px #ffffff);
 }
 
-#trending-recipe>h3{
+#trending-recipe>h3 {
     color: white;
     font-size: 48px;
     margin-top: 20px;
     margin-bottom: 180px;
 }
 
-#modal-container{
+#modal-container {
     width: 80vw;
     height: 90vh;
     padding: 20px;
@@ -206,11 +190,15 @@ h2{
     overflow-y: scroll;
     visibility: hidden;
     box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
-} 
-.blur {
-	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	backdrop-filter: saturate(180%) blur(20px);
 }
+
+/* Blur effect class */
+.blur {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+/* Close modal button styles */
 .closeModal {
     position: absolute;
     top: 10px;
@@ -229,21 +217,24 @@ h2{
     transform: perspective(1px) scale(1.1);
     background-color: rgb(230, 59, 59);
 }
-#ingredient-list{
+
+/* Ingredient list styles */
+#ingredient-list {
     margin-bottom: 30px;
     padding: 0 180px;
 }
 
-li{
+li {
     font-size: 24px;
     color: #D75519;
 }
 
-#modal-container>h3{
+#modal-container>h3 {
     color: #D75519;
 }
 
-#search-results{
+/* Search results section styles */
+#search-results {
     background: url(./assets/search-result-bg.jpg);
     /* height: 200vh; */
     width: 100vw;
@@ -255,27 +246,29 @@ li{
     display: none;
 }
 
-#search-results>h2{
+#search-results>h2 {
     margin-bottom: 50px;
 }
-#result-grid{
+
+#result-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.result-card{
+/* Result card styles */
+.result-card {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 24px;
     border-radius: 30px;
 }
 
-#result-image{
+#result-image {
     height: 250px;
     border-radius: 30px;
 }
 
-.result-card>h4{
+.result-card>h4 {
     font-size: 26px;
     color: white;
     margin: 20px auto;

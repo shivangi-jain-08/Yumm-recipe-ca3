@@ -2,21 +2,30 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title and favicon -->
     <title>yumm...</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="./style.css">
+    
+    <!-- Axios library for making HTTP requests -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
 </head>
 
 <body>
-
+    <!-- Top section of the page containing navigation and header -->
     <div id="top-section">
         <nav class="flex">
+            <!-- Left side of the navigation bar with the logo -->
             <div id="nav-left">
                 <img src="./assets/logo-full.png" alt="logo" id="logo">
             </div>
+            <!-- Right side of the navigation bar with links -->
             <div id="nav-right" class="flex">
                 <a href="#home">HOME</a>
                 <a href="#popular-categories">CATEGORIES</a>
@@ -25,25 +34,21 @@
             </div>
         </nav>
 
+        <!-- Header section with dynamic text and search bar -->
         <header id="top-header-section" class="flex">
             <div id="moving-text">
-                <!-- <div class="moving-text-tag"><h1>abc</h1></div>
-                <div class="moving-text-tag"><h1>abc</h1></div>
-                <div class="moving-text-tag"><h1>abc</h1></div>
-                <div class="moving-text-tag"><h1>abc</h1></div>
-                <div class="moving-text-tag"><h1>abc</h1></div> -->
                 <h1>yumm...</h1>
-
             </div>
             <div>
                 <h3>Your Ultimate Recipe Destination</h3>
             </div>
             <div>
-                <h4>Unleash you inner chef with yumm...</h4>
+                <h4>Unleash your inner chef with yumm...</h4>
             </div>
             <div id="search">
                 <h5>Search for your favorite categories</h5>
                 <div id="search-elements">
+                    <!-- Input field for search with search button -->
                     <input type="text" id="search-input" name="search-bar" placeholder="Search...">
                     <button id="search-button"><img src="./assets/search.png" alt="" id="search-button-img"></button>
                 </div>
@@ -51,9 +56,12 @@
         </header>
     </div>
 
+    <!-- Middle section of the page with popular categories, trending recipe, and search results -->
     <div id="middle-section">
+        <!-- Section for popular categories -->
         <div id="popular-categories">
             <h2>Popular Categories</h2>
+            <!-- Display popular categories as circular images -->
             <div id="categories-circles" class="flex">
                 <img src="./assets/breakfast-cat.png" alt="" class="cat-circle-images" id="breakfast">
                 <img src="./assets/chicken-cat.png" alt="" class="cat-circle-images" id="chicken">
@@ -62,24 +70,31 @@
             </div>
         </div>
 
+        <!-- Section for trending recipe -->
         <div id="trending-recipe">
+            <!-- Placeholder for trending recipe (commented out) -->
             <!-- <h2>Trending Recipe</h2>
             <img src="./assets/vegan-cat.png" alt="" id="random-meal-image">
             <h3 id="random-meal-name">Vegan</h3> -->
+            
+            <!-- Container for detailed meal information -->
             <div id="modal-container">
-                
+                <!-- Image and list for ingredients -->
                 <img src="./assets/chicken-cat.png" alt="">
-                <ol id="ingredient-list">
-                </ol>
+                <ol id="ingredient-list"></ol>
+                <!-- Instructions for the recipe -->
                 <h3>Instructions</h3>
                 <p id="instructions"></p>
             </div>
         </div>
 
+        <!-- Section for search results -->
         <div id="search-results">
+            <!-- Heading for search results -->
             <h2 id="category-in-search">Search Results</h2>
-            <!-- <h3>Please you a valid search term</h3> -->
+            <!-- Container for displaying search results -->
             <div id="result-grid">
+                <!-- Placeholder for a result card (commented out) -->
                 <!-- <div class="result-card">
                     <img src="./assets/vegan-cat.png" alt="" id="result-image">
                     <h4>DishName</h4>
@@ -88,11 +103,12 @@
         </div>
     </div>
 
+    <!-- Footer section -->
     <footer>
 
     </footer>
 
-
+    <!-- Link to the external JavaScript file -->
     <script src="./script.js"></script>
 </body>
 

@@ -89,7 +89,6 @@ function getSearchResults(){
         categoryInSearch.innerHTML = `<h2 id="category-in-search">Search Results: ${searchInput}</h2>`
 
         let searchResult = document.getElementById("result-grid")
-        // console.log(res.data.meals[i].strMeal)
         let output="";
         searchResult.innerHTML = output
         for(let i = 0; i<data.length; i++){
@@ -115,14 +114,7 @@ function getSearchResults(){
 
 }
 
-// Function to get details of one meal when it is clicked
-// function getOneMeal(){
-
-// }
-
 
 getRandomMeal()
-// getSearchResults()
-
 let searchBtn = document.getElementById("search-button")
 searchBtn.addEventListener("click", getSearchResults)
